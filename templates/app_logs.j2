@@ -1,0 +1,11 @@
+{{ app_path }}/shared/log/*.log {
+        daily
+        missingok
+        rotate 7
+        compress
+        notifempty
+        create
+        copytruncate
+        maxage 90
+        size 50M
+}

@@ -1,0 +1,8 @@
+---
+- name: Check for Logrotate
+  apt: pkg=logrotate state=present
+  sudo: yes
+
+- name: Move config files to server
+  template: src=app_logs.j2 dest=/etc/logrotate.d/{{ app_name }}
+  sudo: yes

@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  remote_user: root
+  sudo: True
+  vars:
+    app_path: /srv/{{ app_name }}
+    app_name: app
+  roles:
+    - {role: ansible-logrotate}
