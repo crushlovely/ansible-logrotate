@@ -1,6 +1,6 @@
 ---
 - name: Check for Logrotate
-  apt: pkg=logrotate state=present
+  apt: pkg=logrotate state=latest
   sudo: yes
 
 - name: Move config files to server
