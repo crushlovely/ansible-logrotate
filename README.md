@@ -17,7 +17,7 @@ $ ansible-galaxy install crushlovely.logrotate,v1.0.0
 app_name: test
 app_path: /home/ubuntu/test
 logrotate:
-  path: "{{ app_path }}/shared/log/*.log"
+  path: "{{ app_path }}"
 ```
 
 ## Usage
